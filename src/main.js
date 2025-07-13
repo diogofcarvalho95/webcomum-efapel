@@ -60,6 +60,38 @@ document.addEventListener('DOMContentLoaded', () => {
     },
   });
 
+  const swiper_plans = new Swiper(".plan__slides .swiper", {
+    slidesPerView: 1,
+    spaceBetween: 10,
+    loop: true,
+    navigation: {
+      nextEl: ".plan .swiper-button-next",
+      prevEl: ".plan .swiper-button-prev",
+    },
+    breakpoints: {
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 15,
+      },
+      1024: {
+        slidesPerView: 3,
+        spaceBetween: 15,
+      },
+      1200: {
+        slidesPerView: 3,
+        spaceBetween: 20,
+      },
+      1400: {
+        slidesPerView: 3,
+        spaceBetween: 30,
+      },
+      1600: {
+        slidesPerView: 3,
+        spaceBetween: 35,
+      },
+    },
+  });
+
   //faqs
   document.querySelectorAll('.solutions__content__faqs__faq__question').forEach((btn) => {
     btn.addEventListener('click', () => {
