@@ -4,6 +4,7 @@ import 'swiper/css';
 
 
 document.addEventListener('DOMContentLoaded', () => {
+
   //init swiper
   const progressCircle = document.querySelector(".autoplay-progress svg");
   const swiper = new Swiper('#hero .swiper', {
@@ -57,6 +58,14 @@ document.addEventListener('DOMContentLoaded', () => {
         spaceBetween: 20,
       },
     },
+  });
+
+  //faqs
+  document.querySelectorAll('.solutions__content__faqs__faq__question').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const faq = btn.closest('.solutions__content__faqs__faq');
+      faq.classList.toggle('is-open');
+    });
   });
 
 });
