@@ -1,3 +1,4 @@
+@use './variables' as *;
 
 html {
     scroll-behavior: smooth;
@@ -12,7 +13,8 @@ body {
     font-size: 1rem;
     color-scheme: light dark;
     color: $text-body;
-    background-color: $secondary-color;
+    background-color: #fff;
+    //background-color: $secondary-color;
     font-synthesis: none;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
@@ -47,5 +49,29 @@ img {
     display: block;
     height: auto;
 }
+
+button {
+    all: unset;
+    appearance: none;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    color: inherit;
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    /*&:focus {
+      outline: 2px solid currentColor;
+      outline-offset: 2px;
+    }*/
+  }
 
   

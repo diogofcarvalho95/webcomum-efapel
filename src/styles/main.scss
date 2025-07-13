@@ -1,9 +1,1 @@
-@import './variables';
-@import './reset';
-@import './typography';
-@import './layout';
-
-// SCSS components
-@import './components/header';
-@import './components/button';
-@import './components/footer';
+@use './index' as *;
