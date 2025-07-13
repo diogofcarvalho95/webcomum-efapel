@@ -1,0 +1,51 @@
+
+html {
+    scroll-behavior: smooth;
+    overscroll-behavior: none;
+    font-size: 16px;
+}
+
+body {
+    font-family: $font-family;
+    line-height: 1.5;
+    font-weight: 400;
+    font-size: 1rem;
+    color-scheme: light dark;
+    color: $text-body;
+    background-color: $secondary-color;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+/* Box sizing reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ul, ol, figure, blockquote, dl, dd {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+    font-weight: 500;
+    color: $primary-color;
+    text-decoration: inherit;
+    &:hover, &:focus  {
+        color: $primary-color;
+    }
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+}
+
+  
