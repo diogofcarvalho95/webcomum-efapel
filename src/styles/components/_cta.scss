@@ -1,0 +1,70 @@
+@use './../variables' as *;
+
+.cta {
+    &__container {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        position: relative;
+        overflow: hidden;
+        min-height: 75vh;
+        display: flex;
+        flex-direction: column;
+        @media (min-width: 992px) {
+            padding-top: 4rem;
+            padding-bottom: 4rem;
+        }
+    }
+    &__image {
+        pointer-events: none;
+        position: absolute;
+        object-fit: cover;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transform: scale(1);
+        transition: all 0.5s ease;
+    }
+    &__overlay {
+        pointer-events: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #000;
+        opacity: 0.6;
+        z-index: 1;
+        transition: all 0.3s ease;
+    }
+    &:hover {
+        .cta__image {
+            transform: scale(1.1);
+        }
+        .cta__overlay {
+            opacity: 0.7;
+        }
+        .btn {
+            background-color: $primary-color;
+            color: #fff;
+        }
+    }
+    &__content {
+        position: relative;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 1rem;
+        flex: 1;
+        &__title {
+            font-size: 1.8rem;
+            color: #fff;
+            margin-top: 1rem;
+        }
+    }
+}
+
+
