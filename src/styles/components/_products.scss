@@ -4,6 +4,10 @@
     padding-top: 3rem;
     padding-bottom: 3rem;
     position: relative;
+    @media (min-width: 992px) {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
     &__side {
         white-space: nowrap;
         font-weight: 800;
@@ -29,10 +33,6 @@
         @media (min-width: 1440px) {
             font-size: 7rem;
         }
-    }
-    @media (min-width: 992px) {
-        padding-top: 4rem;
-        padding-bottom: 4rem;
     }
     .swiper-button-next, .swiper-button-prev {
         border: 1px solid $neutral-color;

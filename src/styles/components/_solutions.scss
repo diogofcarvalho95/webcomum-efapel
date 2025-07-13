@@ -1,0 +1,49 @@
+@use './../variables' as *;
+
+.solutions {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    position: relative;
+    @media (min-width: 992px) {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+    &__container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+        align-items: center;
+        @media (min-width: 992px) {
+            gap: 2rem;
+        }
+        @media (min-width: 1200px) {
+            gap: 3rem;
+        }
+        @media (min-width: 1440px) {
+            gap: 3.5rem;
+        }
+    }
+    &__image {
+        position: relative;
+        img {
+            width: 100%;
+            height: 80vh;
+            max-width: 100%;
+            object-fit: cover;
+            z-index: 2;
+            position: relative;
+        }
+        &__shadow {
+            position: absolute;
+            pointer-events: none;
+            left: -2rem;
+            top: 2rem;
+            background-color: $primary-color;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+        }
+    }
+}
+
+
