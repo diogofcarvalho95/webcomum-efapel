@@ -26,6 +26,12 @@ h1, h2, h3, h4, h5, h6 {
 .title {
     font-size: 1.8rem;
     letter-spacing: -0.8px;
+    &--primary {
+        color: $primary-color;
+    }
+    &--white {
+        color: #fff;
+    }
     @media (min-width: 992px) {
         font-size: 1.9rem;
     }

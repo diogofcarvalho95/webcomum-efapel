@@ -8,6 +8,10 @@
         padding-top: 4rem;
         padding-bottom: 4rem;
     }
+    @media (min-width: 1440px) {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
     &__side {
         white-space: nowrap;
         font-weight: 800;

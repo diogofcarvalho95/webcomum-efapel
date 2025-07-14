@@ -9,6 +9,10 @@
         padding-top: 4rem;
         padding-bottom: 4rem;
     }
+    @media (min-width: 1440px) {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
     .intro {
         .swiper-button-next, .swiper-button-prev {
             border: 1px solid $neutral-color-2;
